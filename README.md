@@ -60,3 +60,12 @@ export class ProductController {
 ---
 
 
+> Note: Headers e token set na kore dile value show hobe na
+> 
+> <img width="518" height="124" alt="image" src="https://github.com/user-attachments/assets/18b289e5-e5db-4ea2-bd23-39d59186f176" />
+
+##
+
+> Note: Headers e token set kore dite hobe tai Headers e Authorization e Bearer my-secret-token diye dibo
+>
+> <img width="898" height="641" alt="image" src="https://github.com/user-attachments/assets/71d7bd7f-5a74-497e-9a41-213872ad7d28" />
