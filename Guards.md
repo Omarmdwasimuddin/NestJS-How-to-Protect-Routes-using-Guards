@@ -65,3 +65,9 @@ export class AuthGuard implements CanActivate {
 
 - `true` return করলে → request process হবে।
 - `false` return করলে → Nest request deny করবে।
+
+## Execution Context
+
+`canActivate()` function একটা মাত্র argument নেয় — `ExecutionContext` instance। `ExecutionContext` এর inheritance আসে `ArgumentsHost` থেকে। `ArgumentsHost` আমরা আগে exception filters chapter-এ দেখেছি। উপরের উদাহরণে, আমরা `ArgumentsHost`-এ define করা একই helper method ব্যবহার করছি (যেগুলো আগেও ব্যবহার করেছিলাম) `Request` object-এর reference পাওয়ার জন্য। এই বিষয়ে আরও জানতে [exception filters](https://docs.nestjs.com/exception-filters#arguments-host) chapter-এর Arguments host section দেখতে পারো।
+
+`ArgumentsHost`-কে extend করার মাধ্যমে, `ExecutionContext` আরও কিছু নতুন helper method যোগ করে, যেগুলো current execution process সম্পর্কে অতিরিক্ত তথ্য দেয়। এই তথ্যগুলো এমন generic Guard বানাতে সাহায্য করে যা বিভিন্ন controller, method এবং execution context জুড়ে কাজ করতে পারে। `ExecutionContext` সম্পর্কে আরও জানতে [এখানে](https://docs.nestjs.com/fundamentals/execution-context) দেখো।
