@@ -1,4 +1,4 @@
-# NestJS Guards — সহজ বাংলা ব্যাখ্যা
+# NestJS Guards
 
 ## Guard কী?
 
